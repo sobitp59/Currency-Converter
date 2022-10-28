@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&f[]=cabinet-grotesk@1,800,500,100,700,400,300,200,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter </title>
+</head>
+<body>
+    <div class="currencyConverter">
+
+        <header class="currencyConverter__header">
+            <h1 class="currencyConverter__title">Currency Converter</h1>
+            <p class="currencyConverter__info">convert your money from one currency to another</p>
+        </header>
+
+        <main class="currencyConverter__main">
+            <form class="currencyConverter__form" autocomplete="off">
+                <div class="currencyConverter__input input__from">
+                    <label for="from">From</label>
+                    <input type="text" name="from" id="from" />
+                    <ul class="currencyConverter__fromList"></ul>
+                </div>
+                
+                <div class="currencyConverter__input input__to">
+                    <label for="to">To</label>
+                    <input type="text" name="to" id="to" />
+                    <ul class="currencyConverter__toList"></ul>
+                </div>
+                
+                <div class="currencyConverter__input">
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="amount" />
+                </div>
+
+                <button type="submit" class="currencyConverter__button">Convert</button>
+            </form>
+
+            <section class="currencyConverter__output">
+                <h2 class="currencyConverter__result"></h2>
+            </section>
+        </main>
+        
+        <footer class="currencyConverter__footer">
+            <h3>Developed by <a href="#">Sobit Prasad</a></h3>
+            <a href="#">Source Code</a>
+        </footer>   
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
